@@ -53,7 +53,7 @@ var random = {
               ? v 
               : typeof v == 'object' 
                 ? (!v.slice 
-                    ? v 
+                    ? random.Constructor(v)()
                     : typeof v[0] == 'function' 
                       ? random.randomArray( random.randomInt(v[1]), v[0] )
                       : v[0] == 'fixed' 
@@ -73,5 +73,11 @@ var random = {
     return arr[random.randomInt(arr.length)];
   }
 }
+
+random.Int = random.randomInt;
+random.Array = random.randomArray;
+random.String = random.randomString;
+random.Constructor = random.randomConstructor;
+random.Item = random.randomItem;
 
 module.exports = random;

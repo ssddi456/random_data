@@ -11,5 +11,13 @@
     "mock"
   ],
   "author": "ssddi456",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ssddi456/random_data.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ssddi456/random_data/issues"
+  },
+  "homepage": "https://github.com/ssddi456/random_data"
 }
